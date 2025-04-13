@@ -29,8 +29,8 @@ body {
 }
 
 .main-cover {
-    height: 250px;
-    width: auto;
+    height: auto;
+    width: 450px;
 }
 
 ul {
@@ -55,6 +55,12 @@ ul {
     justify-content: space-between;
 }
 
+.introduction-wrapper > div {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -75,7 +81,7 @@ ul {
     text-decoration: none;
     cursor: pointer;
     border-radius: 8px;
-    padding: 10px;
+    padding: 14px;
     width: 150px;
 }
 
@@ -87,7 +93,6 @@ ul {
 .section-two {
     display: flex;
     flex-direction: column;
-    /* background-color: #E0E0E0; */
 }
 
 .information-container {
@@ -102,7 +107,7 @@ ul {
 .bullet-card {
     display: flex;
     flex-direction: column;
-    width: 170px;
+    width: 200px;
     gap: 10px;
 }
 
@@ -111,7 +116,7 @@ ul {
     font-weight: 900;
     color: #0D0D0D;
     width: 100%;
-    padding: 30px 300px;
+    padding: 30px 400px;
     justify-content: center;
     text-align: center;
 }
@@ -119,8 +124,85 @@ ul {
 .bullet-card > img {
     border: solid 4px rgb(255, 81, 0);
     border-radius: 18px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .bullet-card > p {
     text-align: center;
+    color: #1f2937;
+}
+
+.quote-container {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    padding: 80px 320px;
+    background-color: #E5E7EB;
+    color: #1f2937;
+    gap:  5px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote-signature {
+    text-align: end;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.second-section{
+   display: flex;
+   width: 100%;
+   padding: 100px 200px;
+   justify-content: center;
+}
+
+.action-section {
+    display: flex;
+    background-color: rgb(255, 81, 0);
+    padding: 50px 120px;
+    width: 100%;
+    border-radius: 8px;
+    justify-content: space-between;
+    color: white;
+}
+
+.text1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.text2 {
+    color:#E5E7EB;
+}
+
+.call-to-action {
+    font-family: Roboto;
+    font-size: 18px;
+    background-color: rgb(255, 81, 0);
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+    width: 150px;
+    font-weight: 700;
+}
+
+.copyright {
+    display: flex;
+    background-color: #0D0D0D;
+    color: #B0B0B0;
+    padding: 50px;
+    justify-content: center;
 }
